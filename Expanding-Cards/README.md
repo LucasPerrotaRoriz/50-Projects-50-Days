@@ -1,7 +1,7 @@
 <h1>Expanding Cards</h1>
 
 <h2>Demostração do projeto</h2>
-<img src="Expanding-Cards\gif\Expanding-Cards.gif" alt="Expanding Cards image"/ width="800px">
+<img src="gif/Expanding-Cards.gif" alt="Expanding Cards image"/ width="800px">
 
 <h2>Tecnologias utilizadas</h2>
 <ul>
