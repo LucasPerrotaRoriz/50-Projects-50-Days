@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: "Muli", sans-serif;
+  background-color: #333;
+  color: #222;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Circle and Hamburger menu */
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform .5s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 10rem;
+  font-size: 3rem;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+/* Navigation */ 
+.nav__list {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+  margin-inline-start: 3.2rem;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0px);
+  transition-delay: .3s;
+}
+
+.nav__list.show-nav {
+  transform: translateX(0px);
+}
+
+.nav__item {
+  margin-block-end: 3.2rem;
+  transform: translateX(-150px);
+  transition: all .4s ease-in;
+}
+
+.nav__item:nth-child(2) {
+  margin-inline-start: 1.6rem;
+  transform: translateX(-200px);
+}
+
+.nav__item:nth-child(3) {
+  margin-inline-start: 3.2rem;
+  transform: translateX(-250px);
+}
+
+.nav__icon {
+  font-size: 2rem;
+  margin-inline-end: 1.6rem;
+}
+
+.nav__link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Site Content */
+.container {
+  background-color: #fff;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+article {
+  max-width: 100rem;
+  margin: 50px auto;
+}
+
+.article__primary {
+  font-size: 3.2rem;
+}
+
+.article__secondary {
+  font-size: 2rem;
+  margin-block-end: 2.4rem;
+}
+
+.article__author {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.article__text {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin: 1.6rem 0 2.4rem;
+}
