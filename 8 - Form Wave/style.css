@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  background-color: steelblue;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.container h1 {
+  text-align: center;
+  margin-block-end: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  font-family: inherit;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: lightblue;
+  cursor: pointer;
+  transition: transform .4s;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  width: 300px;
+  margin: 20px 0 40px;
+}
+
+.form-control input{
+  width: 100%;
+  font-size: 18px;
+  padding: 15px;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-control input:focus, .form-control input:valid {
+  outline: 0;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
