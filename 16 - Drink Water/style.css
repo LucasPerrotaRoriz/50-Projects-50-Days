@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root {
   --border-color: #144fc6;
@@ -98,3 +98,16 @@ h3 {
   background-color: var(--fill-color);
   transition: .3s ease;
 }
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+
+
+
+
+
+
+
