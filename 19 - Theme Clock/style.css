@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
 
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   transition: all .5s ease-in;
 }
 
-.html.dark {
+html.dark {
   --primary-color: #fff;
   --secondary-color: #000;
 }
@@ -17,11 +21,6 @@ html {
 html.dark {
   background-color: #111;
   color: var(--primary-color);
-}
-
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -69,7 +68,8 @@ body {
   width: 3px;
   height: 65px;
   background-color: var(--primary-color);
-  transform-origin: bottom;
+  transform-origin: bottom center;
+  transition: all .5s ease-in;
 }
 
 .needle.hour {
