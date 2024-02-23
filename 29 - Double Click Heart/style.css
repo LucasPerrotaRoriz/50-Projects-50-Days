@@ -35,6 +35,7 @@ small {
   background: url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')
   no-repeat center center/cover;
   box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -46,8 +47,7 @@ small {
 
 @keyframes grow {
   to {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(10);
     opacity: 0;
   }
 }
-
